@@ -1,0 +1,14 @@
+uuid: ff89b6e5-e86f-442e-abcd-f200243ce796
+name: Ensemble!34
+mail: y.douenel@coopernet.fr
+slogan: 'Pour une gauche réunie'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

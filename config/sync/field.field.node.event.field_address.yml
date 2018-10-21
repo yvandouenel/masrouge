@@ -1,0 +1,21 @@
+uuid: a77ffb6a-3845-46cd-845d-3c65ac49e80e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.event
+  module:
+    - text
+id: node.event.field_address
+field_name: field_address
+entity_type: node
+bundle: event
+label: Adresse
+description: 'Adresse pour le grand public.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
