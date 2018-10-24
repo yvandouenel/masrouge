@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "befeda1bb9127cb8192ded164238c436",
@@ -3645,7 +3645,7 @@
                 "issues": "https://www.drupal.org/project/issues/views_geojson",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2018-03-09 22:40:14"
+            "time": "2018-03-09T22:40:14+00:00"
         },
         {
             "name": "drupal/webform",
@@ -7095,7 +7095,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2018-06-24 20:08:51"
+            "time": "2018-06-24T20:08:51+00:00"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -7267,7 +7267,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-10-03 14:49:03"
+            "time": "2018-10-03T14:49:03+00:00"
         },
         {
             "name": "dflydev/dot-access-configuration",
@@ -9292,17 +9292,6 @@
         {
             "name": "webflo/drupal-core-require-dev",
             "version": "8.6.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webflo/drupal-core-require-dev.git",
-                "reference": "75f73363165a450e9a2f9f1ce3930f148184c964"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/75f73363165a450e9a2f9f1ce3930f148184c964",
-                "reference": "75f73363165a450e9a2f9f1ce3930f148184c964",
-                "shasum": ""
-            },
             "require": {
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "^1.2",

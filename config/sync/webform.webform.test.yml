@@ -1,3 +1,4 @@
+uuid: d62f05b4-fe12-474a-be60-1b13081327c0
 langcode: fr
 status: open
 dependencies: {  }
@@ -155,4 +156,3 @@ access:
     users: {  }
     permissions: {  }
 handlers: {  }
-uuid: d62f05b4-fe12-474a-be60-1b13081327c0

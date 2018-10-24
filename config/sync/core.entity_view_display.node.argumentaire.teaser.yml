@@ -93,6 +93,7 @@ content:
       link: false
     third_party_settings: {  }
 hidden:
+  field_release_date: true
   field_thematique: true
   langcode: true
   links: true

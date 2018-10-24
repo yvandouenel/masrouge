@@ -1,7 +1,7 @@
 uuid: ff89b6e5-e86f-442e-abcd-f200243ce796
-name: Ensemble!34
+name: 'Mas rouge'
 mail: y.douenel@coopernet.fr
-slogan: 'Pour une gauche réunie'
+slogan: 'Gestion de la salle des mariages'
 page:
   403: ''
   404: ''
@@ -12,3 +12,4 @@ langcode: fr
 default_langcode: fr
 _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: contact@masrouge.com

@@ -4,7 +4,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://local.ensemble.my/themes/contrib/ensemble/less/favicon.ico'
+  url: 'http://51.38.234.6/themes/contrib/ensemble/less/favicon.ico'
   use_default: 1
 schemas:
   bootstrap: 8000
@@ -17,7 +17,7 @@ features:
 logo:
   path: themes/contrib/ensemble/less/images/logo-ensemble-34.png
   url: ''
-  use_default: 0
+  use_default: 1
 table_responsive: '-1'
 table: ''
 region_wells:
@@ -31,6 +31,5 @@ region_wells:
   incentive: ''
   content: ''
   sidebar_first: ''
-  sidebar_second: well
+  sidebar_second: ''
   footer: ''
-langcode: fr

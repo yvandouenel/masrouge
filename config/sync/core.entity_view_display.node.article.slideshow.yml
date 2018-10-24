@@ -67,6 +67,8 @@ content:
     region: ds_content
 hidden:
   content_moderation_control: true
+  field_home_slideshow: true
   field_release_date: true
+  field_thematique: true
   langcode: true
   links: true

@@ -1,9 +1,12 @@
+uuid: 78dc4970-7611-4345-ae21-dc7e006770e2
 langcode: fr
 status: open
 dependencies:
   enforced:
     module:
       - webform
+_core:
+  default_config_hash: wAMM24AQ4SZHdKFQh9c-fVPQCPsgd0bA5Sw7nS6Nds0
 open: null
 close: null
 weight: 0
@@ -226,6 +229,3 @@ handlers:
       sender_mail: ''
       sender_name: ''
       theme_name: ''
-uuid: 78dc4970-7611-4345-ae21-dc7e006770e2
-_core:
-  default_config_hash: wAMM24AQ4SZHdKFQh9c-fVPQCPsgd0bA5Sw7nS6Nds0

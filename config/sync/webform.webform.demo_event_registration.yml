@@ -1,3 +1,4 @@
+uuid: 5d6b5acc-ddcc-4864-8af8-d34af0ef4e7e
 langcode: fr
 status: open
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
       - webform_demo_event_registration
   module:
     - webform_scheduled_email
+_core:
+  default_config_hash: rrcIkPLMtadHGiuu56xz53DVaaEmnXNokFOONbqDfdg
 open: null
 close: null
 weight: 0
@@ -239,6 +242,3 @@ handlers:
       confirmation_message: ''
       debug: ''
       entity_limit_total: '[webform_submission:node:field_webform_entity_limit_total]'
-uuid: 5d6b5acc-ddcc-4864-8af8-d34af0ef4e7e
-_core:
-  default_config_hash: rrcIkPLMtadHGiuu56xz53DVaaEmnXNokFOONbqDfdg
