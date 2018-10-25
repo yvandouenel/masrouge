@@ -4,7 +4,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://51.38.234.6/themes/contrib/ensemble/less/favicon.ico'
+  url: 'http://local.masrouge.my/themes/contrib/ensemble/less/favicon.ico'
   use_default: 1
 schemas:
   bootstrap: 8000
@@ -15,9 +15,9 @@ features:
   favicon: 1
   node_user_picture: 1
 logo:
-  path: themes/contrib/ensemble/less/images/logo-ensemble-34.png
+  path: ''
   url: ''
-  use_default: 1
+  use_default: 0
 table_responsive: '-1'
 table: ''
 region_wells:

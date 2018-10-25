@@ -1,17 +1,17 @@
-uuid: 21a89c26-43d9-48fa-bb68-42f46aa1c5d7
+uuid: dd6f7f1f-0939-41fd-b464-4869b8c1131c
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_release_date
+    - field.storage.node.field_dates
     - node.type.event
   module:
     - datetime_range
-id: node.event.field_release_date
-field_name: field_release_date
+id: node.event.field_dates
+field_name: field_dates
 entity_type: node
 bundle: event
-label: 'Dates de parution'
+label: Dates
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ default_value:
     default_date_type: now
     default_date: now
     default_end_date_type: relative
-    default_end_date: '+90 days'
+    default_end_date: '+3 hours'
 default_value_callback: ''
 settings: {  }
 field_type: daterange

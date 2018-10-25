@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_inscription
     - node.type.event
-    - webform.webform.contact
   module:
     - webform
 id: node.event.field_inscription
@@ -16,13 +15,7 @@ label: Inscription
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    default_data: ''
-    status: open
-    open: ''
-    close: ''
-    target_uuid: 78dc4970-7611-4345-ae21-dc7e006770e2
+default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:webform'

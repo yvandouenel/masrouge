@@ -1,17 +1,17 @@
-uuid: 15f6659e-e6a1-4c9e-8bcc-5e91ac84256b
+uuid: c779060d-f4dd-4c1f-83cf-fd3f94468e32
 langcode: fr
 status: true
 dependencies:
   module:
-    - datetime
+    - datetime_range
     - node
-id: node.field_date
-field_name: field_date
+id: node.field_dates
+field_name: field_dates
 entity_type: node
-type: datetime
+type: daterange
 settings:
   datetime_type: datetime
-module: datetime
+module: datetime_range
 locked: false
 cardinality: -1
 translatable: true

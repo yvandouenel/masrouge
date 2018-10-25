@@ -1,17 +1,15 @@
-uuid: 6ac5b1e0-bf3c-4c82-8e85-e151dc1085db
+uuid: 096ac592-a0db-4fa5-8cc6-155c063b84ed
 langcode: fr
 status: true
 dependencies:
   module:
-    - geofield
     - node
-id: node.field_place
-field_name: field_place
+id: node.field_event_condition
+field_name: field_event_condition
 entity_type: node
-type: geofield
-settings:
-  backend: geofield_backend_default
-module: geofield
+type: boolean
+settings: {  }
+module: core
 locked: false
 cardinality: 1
 translatable: true

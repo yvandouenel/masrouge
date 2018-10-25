@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation
 theme: ensemble
 region: navigation_collapsible
-weight: 0
+weight: -9
 provider: null
 plugin: 'system_menu_block:main'
 settings:
