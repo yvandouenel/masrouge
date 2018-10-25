@@ -60,13 +60,36 @@
     margin-top: 30px;
   }
   .back-to-list {
+    clear: both;
     a {
+      display: table;
       .button-back();
+      margin: 0 0 0 100px;
     }
   }
 }
 /* Liste des événements ***********************************************************************************************/
 body.path-agenda {
+  #add-event-masrouge {
+    a {
+      display: block;
+      .title-extra-bold();
+      font-size: 1em;
+      color: @red-ensemble;
+      &:before {
+        .glyphicon();
+        content: '\e83c';
+        color: @red-ensemble;
+      }
+      &:hover {
+        text-decoration: none;
+        color: @green-ensemble;
+        &:before {
+          color: @green-ensemble;
+        }
+      }
+    }
+  }
   h2.page-header {
     color: @gray-darker-ensemble;
     .title-regular();
@@ -191,6 +214,9 @@ body.path-agenda {
               &:before {
                 color: @red-ensemble;
               }
+            }
+            .schedule-event{
+              padding-left: 30px;
             }
           }
         }

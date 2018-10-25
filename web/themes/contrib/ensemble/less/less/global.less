@@ -1,5 +1,5 @@
 body {
-  background-color: @fond-ensemble;
+  background: @fond-ensemble;
   .txt-regular();
   p {
     line-height: 1.5em;
@@ -14,6 +14,9 @@ body {
   }
   .container {
     background-color: white;
+  }
+  #sticky-headband .container {
+    background: white url(../images/masrouge.jpg) no-repeat 0 -100px;
   }
   .field--label-inline .field--label::after {
     content: ' :';
@@ -39,6 +42,38 @@ body {
   }
   div.highlighted {
     margin-top: 50px;
+  }
+}
+#block-connexionutilisateur{
+  width: 450px;
+  float: right;
+  margin-right: 15px;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 10px 0 10px   ;
+  color: white;
+  .form-item{
+    width: 140px;
+    float: left;
+    margin-right: 20px;
+  }
+  .form-actions {
+    width: 110px;
+    float: left;
+  }
+  .request-password-link {
+    display: table;
+    clear: both;
+    margin-left: -25px;
+    margin-bottom: 5px;
+    color: #FFF;;
+  }
+  #edit-submit {
+    margin-top: 15px;
+    padding-left: 0;
+    span:before {
+      content: '';
+    }
   }
 }
 /* images *************************************************************************************************************/
@@ -86,8 +121,8 @@ figure {
     }
   }
   >div.container {
+    height: 150px;
     > div.row {
-      background-color: #FFFFFF;
       .col-sm-12 {
         padding: 0;
       }
@@ -116,7 +151,8 @@ figure {
         }
         display: table;
         position: absolute;
-        right: 45px;
+        left: 15px;
+        top: 60px;
         .form-control {
           border: 1px solid black;
           border-radius: 0;
@@ -131,11 +167,12 @@ figure {
 
     /* menu principal desktop et sm **********************/
     #navbar {
-      margin-bottom: 0;
-      background-color: white;
+      width: 30%;
+      margin: -50px 0 0 100px;
+      background-color: transparent;
+      background-image: none;
       border: 0;
       border-radius:0;
-      border-bottom: 3px solid @red-ensemble;
       ul.menu--main {
         background-color: @red-ensemble;
         display: table;
@@ -179,6 +216,10 @@ figure {
         }
       }
     }
+  }
+  header.navbar-ensemble {
+    position: absolute;
+    top: 67%;
   }
 }
 .page-header {

@@ -1,3 +1,35 @@
+
+#block-mainnavigation {
+  /*display: none;*/
+}
+#drupal-modal {
+  #drupal-modal--body {
+    background-color: white;
+    .tabbable.tabs-left {
+      display: none;
+    }
+    .field-add-more-submit {
+      /*text-indent: -2000px;*/
+      &:after {
+        content: "Ajouter une autre date";
+        position: absolute;
+        left: 20px;
+        background-color: #5bc0de;
+        padding: 2px 30px 2px 2px;
+      }
+    }
+  }
+  .modal-buttons {
+    .glyphicon-ok:before {
+      content: "\e850";
+      color: @red-ensemble;
+    }
+    button:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
 .path-frontpage {
   .field--item {
     img {
