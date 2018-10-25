@@ -70,6 +70,15 @@ body {
     float: left;
     @media (max-width: @screen-sm) {
       margin-top: 16px;
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
+      &:before {
+        .glyphicon();
+        color: white;
+        content: "\e850";
+        font-size: 1.8em;
+      }
     }
     span.glyphicon {
       display: none;
@@ -124,9 +133,11 @@ figure {
   #icon-search-sm {
     @media (max-width: @screen-sm) {
       display: table;
-      margin: 10px 10px 20px 90%;
+      margin: 10px 10px 20px 85%;
       width: 30px;
       height: 30px;
+      position: relative;
+      top: -10px;
       &:before {
         .glyphicon();
         content: '\e831';
@@ -143,6 +154,9 @@ figure {
   }
   > div.container {
     height: 150px;
+    @media (max-width: @screen-sm) {
+      height: 160px;
+    }
     > div.row {
       .col-sm-12 {
         padding: 0;
@@ -173,13 +187,14 @@ figure {
       }
     }
     .navbar-ensemble {
-
       @media (max-width: @screen-sm) {
         border: 1px solid green;
-
         /* Menu ******************************/
         .navbar-toggle {
           border: 1px solid red;
+          position: relative;
+          right: 30px;
+          top: 10px;
         }
       }
     }

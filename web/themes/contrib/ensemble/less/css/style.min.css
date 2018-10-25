@@ -1612,25 +1612,26 @@ body #sticky-headband .container{background:url(../images/masrouge.jpg) 0 -100px
 body .field--label-inline .field--label::after{content:' :'}
 body div.txt-highlighted{padding:20px;margin:20px 0;background-color:#e6e6e6;line-height:1.5em}
 body div.txt-highlighted:before{top:1px;font-family:fontello;font-style:normal;font-weight:400;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;content:"\e85b";font-size:6em;color:#FFF;position:static;float:left}
-#block-connexionutilisateur #edit-submit span:before,body div.txt-highlighted:after{content:''}
-body div.txt-highlighted:after{display:block;clear:both}
+body div.txt-highlighted:after{display:block;content:'';clear:both}
 body div.highlighted{margin-top:50px}
 #block-connexionutilisateur{width:450px;margin-right:15px;background-color:rgba(0,0,0,.5);padding:10px 10px 0;color:#fff}
 @media (min-width:768px){#block-connexionutilisateur{float:right;margin-top:10px}
 }
 #block-connexionutilisateur .form-item{width:150px;float:left;margin-right:10px}
 #block-connexionutilisateur .form-actions{width:110px;float:left}
-#block-connexionutilisateur .form-actions span.glyphicon{display:none}
-#block-connexionutilisateur .request-password-link{display:table;margin-left:-25px;margin-bottom:5px;color:#FFF}
 @media (max-width:768px){#block-connexionutilisateur{float:left;margin-top:-30px}
-#block-connexionutilisateur .form-actions{margin-top:16px}
+#block-connexionutilisateur .form-actions{margin-top:16px;width:30px;height:30px;overflow:hidden}
+#block-connexionutilisateur .form-actions:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#fff;content:"\e850";font-size:1.8em}
 #block-connexionutilisateur .request-password-link{clear:both}
 }
+#block-connexionutilisateur .form-actions span.glyphicon{display:none}
+#block-connexionutilisateur .request-password-link{display:table;margin-left:-25px;margin-bottom:5px;color:#FFF}
 #block-connexionutilisateur #edit-submit{margin-top:15px;padding-left:0}
+#block-connexionutilisateur #edit-submit span:before{content:''}
 figure{position:relative}
 figure figcaption{position:absolute;bottom:0;width:100%;padding:10px;background-color:rgba(0,0,0,.6);color:#FFF;font-family:Nunito,sans-serif;font-weight:400;font-style:normal}
 .no-gutter,.no-gutter [class*=col-]{padding-right:0;padding-left:0}
-@media (max-width:768px){#sticky-headband #icon-search-sm{display:table;margin:10px 10px 20px 90%;width:30px;height:30px}
+@media (max-width:768px){#sticky-headband #icon-search-sm{display:table;margin:10px 10px 20px 85%;width:30px;height:30px;position:relative;top:-10px}
 #sticky-headband #icon-search-sm:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;content:'\e831';color:#e42621;font-size:1.8em}
 #sticky-headband #icon-search-sm.search-open:before{content:'\e832'}
 }
@@ -1641,9 +1642,10 @@ figure figcaption{position:absolute;bottom:0;width:100%;padding:10px;background-
 #sticky-headband>div.container .region-header #block-ensemble-search{display:table;position:absolute;left:15px;top:60px}
 #sticky-headband>div.container .region-header #block-ensemble-search .form-control{border:1px solid #000;border-radius:0;box-shadow:none}
 #sticky-headband>div.container .region-header #block-ensemble-search .input-group-btn{display:none}
-@media (max-width:768px){#sticky-headband>div.container .region-header #block-ensemble-search{display:none}
+@media (max-width:768px){#sticky-headband>div.container{height:160px}
+#sticky-headband>div.container .region-header #block-ensemble-search{display:none}
 #sticky-headband>div.container .navbar-ensemble{border:1px solid green}
-#sticky-headband>div.container .navbar-ensemble .navbar-toggle{border:1px solid red}
+#sticky-headband>div.container .navbar-ensemble .navbar-toggle{border:1px solid red;position:relative;right:30px;top:10px}
 #sticky-headband>div.container #navbar{width:80%;margin:0 0 0 100px}
 }
 #sticky-headband>div.container #navbar{background-color:transparent;background-image:none;border:0;border-radius:0}
