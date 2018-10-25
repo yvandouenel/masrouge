@@ -12,6 +12,8 @@
     moveWebform();
   } else {
     $("#custom-form-this-event").hide();
+    $("button.incitation").hide();
+
   }
 
   function moveLinkArgument() {
