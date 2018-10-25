@@ -7,7 +7,7 @@ body {
     a {
       color: @green-link-ensemble;
       text-decoration: underline;
-      &:hover{
+      &:hover {
         color: @gray-darker-ensemble;
       }
     }
@@ -44,26 +44,43 @@ body {
     margin-top: 50px;
   }
 }
-#block-connexionutilisateur{
+
+#block-connexionutilisateur {
   width: 450px;
-  float: right;
-  margin-right: 15px;
-  margin-top: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 10px 0 10px   ;
-  color: white;
-  .form-item{
-    width: 140px;
+  @media (min-width: @screen-sm) {
+    float: right;
+    margin-top: 10px;
+  }
+  @media (max-width: @screen-sm) {
     float: left;
-    margin-right: 20px;
+    margin-top: -30px;
+  }
+
+  margin-right: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 10px 0 10px;
+  color: white;
+  .form-item {
+    width: 150px;
+    float: left;
+    margin-right: 10px;
   }
   .form-actions {
     width: 110px;
     float: left;
+    @media (max-width: @screen-sm) {
+      margin-top: 16px;
+    }
+    span.glyphicon {
+      display: none;
+    }
+
   }
   .request-password-link {
     display: table;
-    clear: both;
+    @media (max-width: @screen-sm) {
+      clear: both;
+    }
     margin-left: -25px;
     margin-bottom: 5px;
     color: #FFF;;
@@ -76,6 +93,7 @@ body {
     }
   }
 }
+
 /* images *************************************************************************************************************/
 figure {
   position: relative;
@@ -89,38 +107,41 @@ figure {
     .title-regular();
   }
 }
+
 /* Grille grid ********************************************************************************************************/
 .no-gutter {
-  padding-right:0;
-  padding-left:0;
+  padding-right: 0;
+  padding-left: 0;
   [class*="col-"] {
-    padding-right:0;
-    padding-left:0;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
+
 /* Fin de la grille ***************************************************************************************************/
 #sticky-headband {
   /* icon search sm ***********************************/
   #icon-search-sm {
     @media (max-width: @screen-sm) {
       display: table;
-      margin: 10px 10px 20px 85%;
+      margin: 10px 10px 20px 90%;
       width: 30px;
       height: 30px;
-      &:before{
+      &:before {
         .glyphicon();
         content: '\e831';
         color: @red-ensemble;
         font-size: 1.8em;
       }
+
       &.search-open {
-        &:before{
+        &:before {
           content: '\e832';
         }
       }
     }
   }
-  >div.container {
+  > div.container {
     height: 150px;
     > div.row {
       .col-sm-12 {
@@ -131,20 +152,8 @@ figure {
       position: relative;
     }
 
-
     .region-header {
       /* Moteur de recherche sm **********/
-      @media (max-width: @screen-sm) {
-        position: absolute;
-        width: 50%;
-        margin-left: 25%;
-        z-index: 1;
-        top: -50px;
-        /* Menu ******************************/
-        .navbar-toggle{
-          margin-top: 30px;
-        }
-      }
       #block-ensemble-search {
         @media (max-width: @screen-sm) {
           display: none;
@@ -162,17 +171,34 @@ figure {
           display: none;
         }
       }
+    }
+    .navbar-ensemble {
 
+      @media (max-width: @screen-sm) {
+        border: 1px solid green;
+
+        /* Menu ******************************/
+        .navbar-toggle {
+          border: 1px solid red;
+        }
+      }
     }
 
     /* menu principal desktop et sm **********************/
     #navbar {
-      width: 30%;
-      margin: -50px 0 0 100px;
       background-color: transparent;
       background-image: none;
       border: 0;
-      border-radius:0;
+      border-radius: 0;
+      @media (max-width: @screen-sm) {
+        width: 80%;
+        margin: 0 0 0 100px;
+      }
+      @media (min-width: @screen-sm) {
+        width: 30%;
+        margin: -50px 0 0 100px;
+      }
+
       ul.menu--main {
         background-color: @red-ensemble;
         display: table;
@@ -184,11 +210,11 @@ figure {
           display: block;
           a {
             display: block;
-            padding-left: 20  %;
+            padding-left: 20%;
             border-bottom: 1px solid @gray-light;
           }
         }
-        li.active{
+        li.active {
           a {
             background-color: @green-ensemble;
           }
@@ -222,25 +248,30 @@ figure {
     top: 67%;
   }
 }
+
 .page-header {
   .title-bold();
   border: 0 !important;
   text-transform: uppercase;
 }
+
 h2.page-header {
   font-size: 2em;
   margin-top: 20px;
 }
+
 h3.page-header {
   .title-extra-bold();
   font-size: 1.6em;
   margin-top: 20px;
 }
+
 #search-block-form--2 {
   @media (min-width: @screen-sm) {
     display: none;
   }
 }
+
 body:not(.path-frontpage) {
   .main-container {
     margin-top: 145px;
@@ -250,9 +281,11 @@ body:not(.path-frontpage) {
 #full-content-header {
   margin-top: 145px;
 }
+
 .center-block {
   display: table;
 }
+
 .cartouche-noir {
   color: white;
   background: fade(black, 70%);
@@ -303,7 +336,7 @@ body:not(.path-frontpage) {
     bottom: 0px;
     padding: 10px;
     color: white;
-    background: rgba(112,181,44, .8);
+    background: rgba(112, 181, 44, .8);
     .title-bold();
     width: 100%;
     display: block;
@@ -323,7 +356,7 @@ body:not(.path-frontpage) {
       text-indent: -6000px;
     }
   }
-  @media (max-width: @screen-md) and (min-width: 400 px) {
+  @media (max-width: @screen-md) and (min-width: 400px) {
     border: 0;
     .field--name-body {
       width: 400px;
@@ -336,12 +369,13 @@ body:not(.path-frontpage) {
     }
   }
 }
+
 .event-img-txt-date.event-event,
-.node--type-article.node--view-mode-teaser .img-txt{
+.node--type-article.node--view-mode-teaser .img-txt {
   position: relative;
   &:before {
     .glyphicon();
-    content:"\e807";
+    content: "\e807";
     color: black;
     background-color: white;
     width: 40px;
@@ -355,11 +389,13 @@ body:not(.path-frontpage) {
     padding: 12px;
   }
 }
-.node--type-article.node--view-mode-teaser .img-txt{
+
+.node--type-article.node--view-mode-teaser .img-txt {
   &:before {
-    content:"\e82c";
+    content: "\e82c";
   }
 }
+
 /* footer *************************************************************************************************************/
 footer.container {
   margin-top: 0;
@@ -367,10 +403,10 @@ footer.container {
   margin-bottom: 0;
   padding-bottom: 0;
   #top-footer {
-    background-image:url('../images/bandeau-footer-1200.png');
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position:center;
+    background-image: url('../images/bandeau-footer-1200.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 
     @media (min-width: @screen-lg) {
       min-height: 220px;
@@ -399,7 +435,7 @@ footer.container {
       }
       &:before {
         .glyphicon();
-        content:"\e860";
+        content: "\e860";
         background-color: @red-ensemble;
         color: white;
         font-size: 2em;
@@ -418,7 +454,7 @@ footer.container {
       }
       &:before {
         .glyphicon();
-        content:"\e85f";
+        content: "\e85f";
         background-color: @red-ensemble;
         color: white;
         font-size: 2em;
@@ -479,9 +515,7 @@ footer.container {
     }
   }
 }
-button.navbar-toggle {
-  margin-right: 25px !important;
-}
+
 /* icones thématiques */
 .icon-idea {
   &:before {
@@ -489,24 +523,28 @@ button.navbar-toggle {
     content: "\e886";
   }
 }
+
 .icon-organic {
   &:before {
     .icon-taxo-theme();
     content: "\e88d";
   }
 }
+
 .icon-archive {
   &:before {
     .icon-taxo-theme();
     content: "\e885";
   }
 }
+
 .icon-international {
   &:before {
     .icon-taxo-theme();
     content: "\e88a";
   }
 }
+
 .icon-fight {
   &:before {
     .icon-taxo-theme();
@@ -516,24 +554,28 @@ button.navbar-toggle {
     top: -30px !important;
   }
 }
+
 .icon-occitanie {
   &:before {
     .icon-taxo-theme();
     content: "\e878";
   }
 }
+
 .icon-social {
   &:before {
     .icon-taxo-theme();
     content: "\e88c";
   }
 }
+
 .icon-solidarity {
   &:before {
     .icon-taxo-theme();
     content: "\e806";
   }
 }
+
 .icon-taxo-theme {
   .glyphicon();
   font-size: 6em;
@@ -542,9 +584,11 @@ button.navbar-toggle {
   left: -15px !important;
   top: 0 !important;
 }
+
 .position-static {
   position: static !important;
 }
+
 .button-back {
   a {
     display: block;
@@ -558,7 +602,7 @@ button.navbar-toggle {
     background-color: @gray-light-ensemble;
     &:after {
       .glyphicon();
-      content:"\e836";
+      content: "\e836";
       color: white;
       font-size: 1.6em;
       margin-left: 10px;
