@@ -63,76 +63,48 @@
                     </div>
                 {% endblock %}
             {% endif %}
-        </div>
-        <div class="row">
-
-            <div class="col-sm-12" role="heading">
-                {% if page.navigation or page.navigation_collapsible %}
-                    {% block navbar %}
-                        {% set navbar_classes = [
-                        'navbar',
-                        theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default navbar-ensemble',
-                        theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
-                        ] %}
-                        <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
-                            {% if not navbar_attributes.hasClass(container) %}
-                            <div class="{{ container }}">
-                                {% endif %}
-                                <div class="navbar-header ">
-                                    {{ page.navigation }}
-                                    {# .btn-navbar is used as the toggle for collapsed navbar content #}
-                                    {% if page.navigation_collapsible %}
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                                data-target="#navbar-collapse">
-                                            <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                    {% endif %}
-                                </div>
-
-                                {# Navigation (collapsible) #}
-                                {% if page.navigation_collapsible %}
-                                    <div id="navbar-collapse" class="navbar-collapse collapse">
-                                        {{ page.navigation_collapsible }}
-                                    </div>
-                                {% endif %}
-                                {% if not navbar_attributes.hasClass(container) %}
-                            </div>
+            {% if page.navigation or page.navigation_collapsible %}
+                {% block navbar %}
+                    {% set navbar_classes = [
+                    'navbar',
+                    theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default navbar-ensemble',
+                    theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
+                    ] %}
+                    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+                        {% if not navbar_attributes.hasClass(container) %}
+                        <div class="{{ container }}">
                             {% endif %}
-                        </header>
-                    {% endblock %}
-                {% endif %}
-            </div>
+                            <div class="navbar-header ">
+                                {{ page.navigation }}
+                                {# .btn-navbar is used as the toggle for collapsed navbar content #}
+                                {% if page.navigation_collapsible %}
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                            data-target="#navbar-collapse">
+                                        <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                {% endif %}
+                            </div>
+
+                            {# Navigation (collapsible) #}
+                            {% if page.navigation_collapsible %}
+                                <div id="navbar-collapse" class="navbar-collapse collapse">
+                                    {{ page.navigation_collapsible }}
+                                </div>
+                            {% endif %}
+                            {% if not navbar_attributes.hasClass(container) %}
+                        </div>
+                        {% endif %}
+                    </header>
+                {% endblock %}
+            {% endif %}
         </div>
     </div>
     {# Navbar #}
 </div>
-{# Full content header#}
-    {% if page.full_content_header %}
-        <div id="full-content-header">
-            {% block full_content_header %}
-                <div class="row">
-                    {{ page.full_content_header }}
-                </div>
-            {% endblock %}
-        </div>
-    {% endif %}
-{% if page.slideshow %}
-    <div class="container" id="top-home-ss-incentive">
-        <div class="row">
-            <div class="col-md-9">
-                {{ page.slideshow }}
-            </div>
-            <div class="col-md-3">
-                {% if page.incentive %}
-                    {{ page.incentive }}
-                {% endif %}
-            </div>
-        </div>
-    </div>
-{% endif %}
+
 {# Main #}
 {% block main %}
     <div role="main" class="main-container {{ container }} js-quickedit-main-content">
@@ -196,18 +168,10 @@
             <div id="top-footer">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="/themes/contrib/ensemble/less/images/etiquette-footer-small.png" alt=""
-                             id="logo-bottom">
-                        <a href="https://twitter.com/Ensemble_FdG">
-                            <div id="twitter-bottom"><span class="sr-only">Twitter Ensemble 34</span></div>
-                        </a>
-                        <a href="https://www.facebook.com/ga.herault/">
-                            <div id="facebook-bottom"><span class="sr-only">Facebook Ensemble 34</span></div>
-                        </a>
+
                     </div>
                     <div class="col-md-6">
-                        <div id="bottom-base-line">Mouvement pour une alternative de gauche, écologiste et solidaire
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <div id="bottom-base-line"></div>
                     </div>
                 </div>
             </div>
