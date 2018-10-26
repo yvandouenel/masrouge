@@ -1584,7 +1584,7 @@ ol,ul{list-style:none;padding-left:1.5em}
 .control-group .help-inline:first-child,.help-block:first-child{margin-top:0}
 @font-face{font-family:fontello;src:url(../fontello/font/fontello.eot?90885294);src:url(../fontello/font/fontello.eot?90885294#iefix) format('embedded-opentype'),url(../fontello/font/fontello.woff?90885294) format('woff'),url(../fontello/font/fontello.ttf?90885294) format('truetype'),url(../fontello/font/fontello.svg?90885294#fontello) format('svg');font-weight:400;font-style:normal}
 [class*=" icon-"]:hover{text-decoration:none}
-.glyphicon,.glyphicon-h3-a-after>h3>span>a:after,.glyphicon-h3-a>h3>span>a:before,[class*=" icon-"]:before,[class^=icon-]:before{text-decoration:inherit;font-family:fontello;font-size:1em;margin-right:10px;line-height:1em;color:#777;speak:none;display:inline-block;text-align:center;font-variant:normal;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-weight:400;font-style:normal;width:1em}
+.glyphicon,.glyphicon-h3-a-after>h3>span>a:after,.glyphicon-h3-a>h3>span>a:before,[class*=" icon-"]:before,[class^=icon-]:before{text-decoration:inherit;font-family:fontello;font-size:1em;margin-right:10px;line-height:1em;color:#777;speak:none;display:inline-block;width:1em;text-align:center;font-variant:normal;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-weight:400;font-style:normal}
 .glyphicon-h3-a-after>h3>span>a:after,.glyphicon-h3-a>h3>span>a:before,[class*=" icon-"]:before,[class^=icon-]:before{position:relative;top:1px}
 .glyphicon-h3-a>h3>span>a:hover:before{text-decoration:none}
 [class*=" iconafter-"]:after{position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;color:#777;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
@@ -1669,8 +1669,8 @@ h3.page-header{font-weight:800;font-size:1.6em;margin-top:20px}
 #full-content-header,body:not(.path-frontpage) .main-container{margin-top:145px}
 .cartouche-noir{color:#fff;background:rgba(0,0,0,.7);display:inline;box-shadow:10px 0 0 rgba(0,0,0,.7),-10px 0 0 rgba(0,0,0,.7);line-height:1.3em}
 .link-to-arg{display:block;margin:10px;color:#e42621;text-decoration:none}
-.event-img-txt-date.event-event:before,.link-to-arg:before,.node--type-article.node--view-mode-teaser .img-txt:before{font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.link-to-arg:before{position:relative;top:1px;width:1em;content:"\e858";color:#e42621}
+.event-img-txt-date.event-event:before,.link-to-arg:before,.node--type-article.node--view-mode-teaser .img-txt:before{font-style:normal;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.link-to-arg:before{position:relative;top:1px;font-family:fontello;width:1em;content:"\e858";color:#e42621}
 .link-to-arg:hover{color:#000}
 .btn-primary{background-color:#333}
 .event-img-txt-date,.img-txt{margin-top:15px;position:relative;margin-bottom:12px}
@@ -1686,7 +1686,7 @@ h3.page-header{font-weight:800;font-size:1.6em;margin-top:20px}
 .event-img-txt-date .field--name-body,.img-txt .field--name-body{width:100%}
 }
 .event-img-txt-date.event-event,.node--type-article.node--view-mode-teaser .img-txt{position:relative}
-.event-img-txt-date.event-event:before,.node--type-article.node--view-mode-teaser .img-txt:before{content:"\e807";color:#000;background-color:#fff;width:40px;height:40px;border-radius:20px;opacity:.5;position:absolute;top:10px;left:10px;z-index:1;padding:12px}
+.event-img-txt-date.event-event:before,.node--type-article.node--view-mode-teaser .img-txt:before{font-family:fontello;content:"\e807";color:#000;background-color:#fff;width:40px;height:40px;border-radius:20px;opacity:.5;position:absolute;top:10px;left:10px;z-index:1;padding:12px}
 footer.container #top-footer #facebook-bottom:before,footer.container #top-footer #twitter-bottom:before{position:relative;top:1px;font-family:fontello;speak:none;display:inline-block;text-decoration:inherit;width:1em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:2em;background-color:#e42621;font-weight:400;font-style:normal}
 .node--type-article.node--view-mode-teaser .img-txt:before{content:"\e82c"}
 footer.container{margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0}
@@ -1714,6 +1714,7 @@ footer.container #top-footer #bottom-base-line{background-color:#e42621;display:
 }
 @media (max-width:1200px) and (min-width:992px){footer.container #top-footer #bottom-base-line{margin-top:140px;background-color:transparent;font-size:1.2em;color:#FFF;width:380px}
 }
+.icon-archive:before,.icon-idea:before,.icon-international:before,.icon-organic:before{font-size:6em;left:-15px!important;top:0!important}
 @media (max-width:768px){footer.container #top-footer #bottom-base-line{display:table;clear:both;margin:5px auto}
 }
 footer.container .menu-footer{background-color:#4d4d4d}
@@ -1722,10 +1723,10 @@ footer.container .menu-footer .menu--footer li{float:left}
 footer.container .menu-footer .menu--footer li a{color:#fff;font-family:Roboto,sans-serif;font-weight:900;font-style:normal;display:block;text-decoration:none}
 footer.container .menu-footer .menu--footer li a:hover{color:#e42621}
 .icon-archive:before,.icon-fight:before,.icon-idea:before,.icon-international:before,.icon-organic:before{font-family:fontello;font-style:normal;font-weight:400;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#FFF;position:absolute!important}
-.icon-idea:before{font-size:6em;left:-15px!important;top:0!important;content:"\e886"}
-.icon-organic:before{font-size:6em;left:-15px!important;top:0!important;content:"\e88d"}
-.icon-archive:before{font-size:6em;left:-15px!important;top:0!important;content:"\e885"}
-.icon-international:before{font-size:6em;left:-15px!important;top:0!important;content:"\e88a"}
+.icon-idea:before{content:"\e886"}
+.icon-organic:before{content:"\e88d"}
+.icon-archive:before{content:"\e885"}
+.icon-international:before{content:"\e88a"}
 .icon-fight:before{content:"\e881";font-size:12em;left:-60px!important;top:-30px!important}
 .icon-occitanie:before,.icon-social:before,.icon-solidarity:before,.icon-taxo-theme{font-family:fontello;font-weight:400;speak:none;display:inline-block;margin-right:10px;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:6em;color:#FFF;position:absolute!important;left:-15px!important;top:0!important;text-decoration:inherit;width:1em;text-align:center;font-style:normal}
 .icon-occitanie:before{content:"\e878"}
@@ -1773,9 +1774,9 @@ footer.container .menu-footer .menu--footer li a:hover{color:#e42621}
 #block-cartepermanente .thematique-7:before{color:#e42621}
 #block-cartepermanente .thematique-7.legend:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;speak:none;display:inline-block;width:1em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#e42621;content:"\e882";text-decoration:none;font-size:1.7em;left:-5px;margin-right:-5px}
 #block-cartepermanente .thematique-12:before{color:#e42621}
-#block-cartepermanente .international.legend:before,#block-cartepermanente .international:before{color:#333}
 #block-cartepermanente .thematique-12.legend:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;display:inline-block;width:1em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#333;content:"\f031";margin-right:3px;text-decoration:none}
 #block-cartepermanente .international.legend:before,#block-cartepermanente .no-type.legend:before,#block-cartepermanente .rc.legend:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;display:inline-block;width:1em;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;content:"\e878";margin-right:3px;text-decoration:none;text-align:center}
+#block-cartepermanente .international.legend:before,#block-cartepermanente .international:before{color:#333}
 #block-cartepermanente .no-type.legend:before{color:#777}
 #block-cartepermanente .rc.legend:before,#block-cartepermanente .rc:before{color:#9400d3}
 #block-cartepermanente .event-short-date{width:80px;text-align:center;background-color:#fff;font-size:1.2em;margin-left:-20px;margin-top:5px}
@@ -1935,14 +1936,15 @@ body.path-agenda #links-months #current-month,body.path-agenda #links-months #ne
 body.path-agenda #links-months #current-month a,body.path-agenda #links-months #next-month a,body.path-agenda #links-months #previous-month a{font-family:Roboto,sans-serif;font-weight:900;font-style:normal;text-transform:uppercase;color:#4d4d4d;text-decoration:none}
 @media (max-width:768px){body.path-agenda #links-months #current-month a,body.path-agenda #links-months #next-month a,body.path-agenda #links-months #previous-month a{font-size:.7em}
 }
-body.path-agenda #links-months #next-month a:before,body.path-agenda #links-months #previous-month a:after{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;speak:none;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;border-radius:25px;margin-right:10px;font-style:normal;display:inline-block;text-decoration:inherit}
+body.path-agenda #links-months #next-month a:before,body.path-agenda #links-months #previous-month a:after{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;speak:none;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;border-radius:25px;margin-right:10px}
 body.path-agenda #links-months #current-month a:hover,body.path-agenda #links-months #next-month a:hover,body.path-agenda #links-months #previous-month a:hover{color:#e42621}
 body.path-agenda #links-months #previous-month{width:0%;text-align:right}
-body.path-agenda #links-months #previous-month a:after{width:1em;text-align:center;content:"\e833";padding:5px 20px 3px 4px;color:#FFF;background-color:#4d4d4d;margin-left:10px}
+body.path-agenda #links-months #previous-month a:after{font-style:normal;display:inline-block;text-decoration:inherit;width:1em;text-align:center;content:"\e833";padding:5px 20px 3px 4px;color:#FFF;background-color:#4d4d4d;margin-left:10px}
 body.path-agenda #links-months #previous-month a:hover{color:#e42621}
 body.path-agenda #links-months #previous-month a:hover:after{background-color:#e42621}
 body.path-agenda #links-months #next-month{width:0%}
-body.path-agenda #links-months #next-month a:before{width:1em;text-align:center;content:"\e834";padding:5px 15px 3px 8px;color:#FFF;background-color:#4d4d4d}
+body.path-agenda #links-months #next-month a:before,body.path-agenda .view-content div.item-list h3:before{display:inline-block;text-decoration:inherit;width:1em;font-style:normal;content:"\e834"}
+body.path-agenda #links-months #next-month a:before{text-align:center;padding:5px 15px 3px 8px;color:#FFF;background-color:#4d4d4d}
 body.path-agenda #links-months #next-month a:hover{color:red}
 body.path-agenda #links-months #next-month a:hover:after{background-color:#e42621}
 body.path-agenda #links-months h3#viewed-month{font-family:Nunito,sans-serif;font-weight:700;font-style:normal;font-size:2em;text-align:center;text-transform:uppercase}
@@ -1953,11 +1955,12 @@ body.path-agenda #links-months h3#viewed-month{font-family:Nunito,sans-serif;fon
 body.path-agenda .view-content{padding-top:30px}
 body.path-agenda .view-content div.item-list{padding:10px 0;border-bottom:1px solid #4d4d4d}
 body.path-agenda .view-content div.item-list h3{float:left;font-family:Roboto,sans-serif;font-weight:900;font-style:normal;font-size:1.5em;padding:5px;color:#70b52c;margin-right:20px}
-body.path-agenda .view-content div.item-list h3:before,body.path-agenda .view-content div.item-list ul li a:before{top:1px;font-size:1em;speak:none;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-style:normal;position:relative;line-height:1em}
-body.path-agenda .view-content div.item-list h3:before{font-family:fontello;font-weight:400;display:inline-block;text-decoration:inherit;width:1em;color:#70b52c;content:"\e834"}
+body.path-agenda .view-content div.item-list h3:before,body.path-agenda .view-content div.item-list ul li a:before{top:1px;font-size:1em;speak:none;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:relative;line-height:1em}
+body.path-agenda .view-content div.item-list h3:before{font-family:fontello;font-weight:400;color:#70b52c}
 body.path-agenda .view-content div.item-list ul{float:left;width:80%}
 body.path-agenda .view-content div.item-list ul li a{text-decoration:none;display:block;padding:10px;color:#4d4d4d;font-family:Roboto,sans-serif;font-weight:900;font-style:normal}
-body.path-agenda .view-content div.item-list ul li a:before{font-family:fontello;font-weight:400;display:inline-block;text-decoration:inherit;width:1em;color:#ccc;content:"\e83C"}
+body.path-agenda .view-content div.item-list ul li a #event-type-in-list{float:right;font-family:Roboto,sans-serif;font-weight:400;font-style:italic}
+body.path-agenda .view-content div.item-list ul li a:before{font-family:fontello;font-style:normal;font-weight:400;display:inline-block;text-decoration:inherit;width:1em;color:#ccc;content:"\e83C"}
 body.path-agenda .view-content div.item-list ul li a:hover{color:#e42621;background-color:#e6e6e6}
 body.path-agenda .view-content div.item-list ul li a:hover:before{color:#e42621}
 body.path-agenda .view-content div.item-list ul li a .schedule-event{padding-left:30px}
