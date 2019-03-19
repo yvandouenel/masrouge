@@ -78,6 +78,7 @@ hidden:
   content_moderation_control: true
   field_dates: true
   field_document: true
+  field_event_condition: true
   field_event_type: true
   field_inscription: true
   langcode: true
