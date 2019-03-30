@@ -38,6 +38,7 @@ permissions:
   - 'delete own file media'
   - 'delete own image media'
   - 'delete own video_embed media'
+  - 'edit own article content'
   - 'edit own audio media'
   - 'edit own event content'
   - 'edit own file media'
