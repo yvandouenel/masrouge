@@ -100,6 +100,7 @@ export:
   excluded_exporters: {  }
 batch:
   default_batch_export_size: 500
+  default_batch_import_size: 100
   default_batch_update_size: 500
   default_batch_delete_size: 500
   default_batch_email_size: 500
@@ -181,6 +182,8 @@ contribute:
   account_type: user
   account_id: null
 langcode: fr
-third_party_settings: {  }
+third_party_settings:
+  captcha:
+    replace_administration_mode: true
 _core:
   default_config_hash: ew9lJG2u4zCjwo4lmIX639Sd_6X-KBeGgB-ZqDBy_n4
