@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.field_acces
     - field.field.node.event.field_dates
     - field.field.node.event.field_document
+    - field.field.node.event.field_entree
     - field.field.node.event.field_event_condition
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
@@ -72,6 +74,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_acces:
+    weight: 15
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_dates:
     weight: 13
     label: above
@@ -91,6 +101,14 @@ content:
       link: false
     third_party_settings: {  }
     region: right
+  field_entree:
+    weight: 16
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_event_condition:
     weight: 14
     label: above

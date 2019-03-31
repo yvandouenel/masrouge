@@ -57,7 +57,7 @@ tips:
   views-ui-filter:
     id: views-ui-filter
     plugin: text
-    label: 'Filter your view'
+    label: 'Filtrer votre vue'
     body: 'Ajouter des filtres pour limiter le nombre de résultats affichés. Par ex., pour ne montrer que le contenu <em>publié</em>, il faudrait ajouter le filtrer <em>Publié</em> et selectionner <em>Oui</em>.'
     weight: 6
     attributes:

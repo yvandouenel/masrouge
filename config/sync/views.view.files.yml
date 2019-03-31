@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: rRWxAX-IQkJ5viACQRovRkC784EyCl9493GU_G23n2Q
 id: files
-label: Files
+label: Fichiers
 module: file
 description: 'Trouver et gérer les fichiers.'
 tag: default
@@ -19,7 +19,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Maître
     position: 0
     display_options:
       access:
@@ -40,10 +40,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: 'Trier par'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -55,16 +55,16 @@ display:
           id: 0
           total_pages: 0
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: '‹ Précédent'
+            next: 'Suivant ›'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Éléments par page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Tout -'
             offset: false
-            offset_label: Offset
+            offset_label: Décalage
       style:
         type: table
         options:
@@ -302,7 +302,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Size
+          label: Taille
           exclude: false
           alter:
             alter_text: false
@@ -354,7 +354,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Status
+          label: État
           exclude: false
           alter:
             alter_text: false
@@ -586,7 +586,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: Filename
+            label: 'Nom du fichier'
             description: ''
             use_operator: false
             operator: filename_op
@@ -666,7 +666,7 @@ display:
           exposed: true
           expose:
             operator_id: status_op
-            label: Status
+            label: État
             description: ''
             use_operator: false
             operator: status_op
@@ -695,7 +695,7 @@ display:
           entity_type: file
           entity_field: status
       sorts: {  }
-      title: Files
+      title: Fichiers
       header: {  }
       footer: {  }
       empty:
@@ -737,7 +737,7 @@ display:
       path: admin/content/files
       menu:
         type: tab
-        title: Files
+        title: Fichiers
         description: ''
         menu_name: admin
         weight: 0
@@ -794,16 +794,16 @@ display:
           id: 0
           total_pages: 0
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: '‹ Précédent'
+            next: 'Suivant ›'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Éléments par page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Tout -'
             offset: false
-            offset_label: Offset
+            offset_label: Décalage
       filters: {  }
       filter_groups:
         operator: AND
@@ -1028,7 +1028,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Tout
           title_enable: true
           title: 'Information d''utilisation du fichier {{ arguments.fid }}'
           default_argument_type: fixed

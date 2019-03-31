@@ -1,0 +1,33 @@
+uuid: ada7b2de-95af-4961-bce4-d12f77b63e0f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entree
+    - node.type.event
+    - taxonomy.vocabulary.entree
+  content:
+    - 'taxonomy_term:entree:83c9fe79-c150-47ba-b7a4-eb8a4e412bc4'
+id: node.event.field_entree
+field_name: field_entree
+entity_type: node
+bundle: event
+label: Entrée
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 83c9fe79-c150-47ba-b7a4-eb8a4e412bc4
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      entree: entree
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

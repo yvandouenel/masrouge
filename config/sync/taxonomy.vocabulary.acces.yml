@@ -1,0 +1,9 @@
+uuid: 3b1cc724-52aa-4a1e-be9d-98dfbdf834f4
+langcode: fr
+status: true
+dependencies: {  }
+name: Accès
+vid: acces
+description: ''
+hierarchy: 0
+weight: 0

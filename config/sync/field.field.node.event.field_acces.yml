@@ -1,0 +1,33 @@
+uuid: 6dc2db92-965d-4d98-8447-5e77f386a500
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acces
+    - node.type.event
+    - taxonomy.vocabulary.acces
+  content:
+    - 'taxonomy_term:acces:6f636bb1-28db-4721-8737-bc73fa69791b'
+id: node.event.field_acces
+field_name: field_acces
+entity_type: node
+bundle: event
+label: Accès
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 6f636bb1-28db-4721-8737-bc73fa69791b
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      acces: acces
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

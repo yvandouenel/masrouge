@@ -1,0 +1,11 @@
+uuid: 70c73e7a-09b5-4251-808a-fcd9dc8ceab5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.acces
+id: taxonomy_term.acces
+target_entity_type_id: taxonomy_term
+target_bundle: acces
+default_langcode: site_default
+language_alterable: false

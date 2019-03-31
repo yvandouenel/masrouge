@@ -1,0 +1,9 @@
+uuid: 6d3b1577-4893-44bc-9d90-9badc7a1ca1e
+langcode: fr
+status: true
+dependencies: {  }
+name: Entrée
+vid: entree
+description: ''
+hierarchy: 0
+weight: 0

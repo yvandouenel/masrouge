@@ -9,14 +9,14 @@ dependencies:
 _core:
   default_config_hash: T_JxNjYlfoRBi7Bj1zs5Xv9xv1btuBkKp5C1tNrjMhI
 id: editorial
-label: Editorial
+label: Éditorial
 type: content_moderation
 type_settings:
   states:
     archived:
       published: false
       default_revision: true
-      label: Archivé
+      label: Archivé(e)
       weight: 5
     demande_de_modification:
       published: false
@@ -40,19 +40,19 @@ type_settings:
       weight: 0
   transitions:
     archive:
-      label: Archive
+      label: Archiver
       from:
         - published
       to: archived
       weight: 2
     archived_draft:
-      label: 'Restauration à l''état de brouillon'
+      label: 'Restaurer le brouillon'
       from:
         - archived
       to: draft
       weight: 3
     archived_published:
-      label: Re-publier
+      label: Restaurer
       from:
         - archived
       to: published

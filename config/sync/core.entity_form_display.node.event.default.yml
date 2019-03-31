@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.field_acces
     - field.field.node.event.field_dates
     - field.field.node.event.field_document
+    - field.field.node.event.field_entree
     - field.field.node.event.field_event_condition
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
@@ -29,6 +31,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_acces:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_dates:
     weight: 2
     settings:
@@ -49,11 +57,19 @@ content:
         6: 0
         7: 0
       inline: 0
+      allowed_hours: ''
+      mask: false
     third_party_settings: {  }
     type: single_date_time_range_widget
     region: content
+  field_entree:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_event_condition:
-    weight: 5
+    weight: 7
     settings:
       display_label: true
     third_party_settings: {  }
