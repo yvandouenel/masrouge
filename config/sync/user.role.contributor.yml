@@ -19,7 +19,6 @@ permissions:
   - 'access in-place editing'
   - 'access media overview'
   - 'access own edition workflow_transion overview'
-  - 'access toolbar'
   - 'access workbench'
   - 'administer nodes'
   - 'create article content'
