@@ -180,6 +180,34 @@ body.path-agenda {
   /* Résultats mois par mois ***************************/
   .view-content {
     padding-top: 30px;
+    .custom-event-row {
+      .dates-acces-entree {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          margin: 0;
+          padding: 0 5px;
+          a {
+            padding: 0;
+            &:before{
+              display: none;
+            }
+          }
+        }
+      }
+      .views-field-field-entree {
+        float: left;
+        border: 1px solid red;
+        display: flex;
+        a {
+          padding: 0;
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
     div.item-list {
       padding: 10px 0;
       border-bottom: 1px solid @gray-darker-ensemble;
