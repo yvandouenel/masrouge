@@ -16,25 +16,20 @@
     }
   ],
   "require": {
-    "balbuf/drupal-libraries-installer": "^1.0",
+    "drupal/core-recommended": "^9.0.0",
     "composer/installers": "^1.2",
     "cweagans/composer-patches": "^1.6",
-    "drupal-composer/drupal-scaffold": "^2.5",
-    "drupal/admin_toolbar": "^1.24",
+    "drupal/admin_toolbar": "^3.1",
     "drupal/bootstrap": "^3.11",
-    "drupal/config_installer": "^1.8",
-    "drupal/core": "^8.8.12",
     "drupal/crop": "^2.0",
-    "drupal/devel": "^1.2",
     "drupal/draggableviews": "^1.0",
     "drupal/ds": "^3.1",
     "drupal/entity_browser": "^2.0.0",
     "drupal/entity_embed": "^1.0@beta",
     "drupal/exclude_node_title": "^1.0@beta",
     "drupal/features": "^3.7",
-    "drupal/field_group": "^1.0",
+    "drupal/field_group": "^3.2",
     "drupal/fixed_block_content": "^1.0@RC",
-    "drupal/geofield_map": "^2.5",
     "drupal/image_widget_crop": "^2.1",
     "drupal/inline_entity_form": "^1.0@RC",
     "drupal/metatag": "^1.5",
@@ -42,20 +37,20 @@
     "drupal/pathauto": "^1.2",
     "drupal/rules": "^3.0@alpha",
     "drupal/rules_role_email": "^1.0@alpha",
-    "drupal/single_datetime": "^1.6",
+    "drupal/single_datetime": "1.8-beta1",
     "drupal/video_embed_field": "^2.0",
     "drupal/views_bootstrap": "^3.0",
-    "drupal/webform": "^5.0@RC",
+    "drupal/webform": "6.2.0-beta2",
     "drupal/workbench": "^1.1",
     "drupal/workflow": "^1.1",
-    "drush/drush": "^9.0.0",
+    "drush/drush": "^10",
     "vlucas/phpdotenv": "^2.4",
-    "webflo/drupal-core-require-dev": "^8.8.12",
-    "webflo/drupal-finder": "^1.0.0",
-    "webmozart/path-util": "^2.3"
-  },
-  "require-dev": {
-    "drupal/console": "^1.8"
+
+
+    "webmozart/path-util": "^2.3",
+    "drupal/upgrade_status": "^3.14",
+    "drupal/geofield": "^1.44",
+    "drupal/devel": "^4.1"
   },
   "conflict": {
     "drupal/drupal": "*"
@@ -109,6 +104,15 @@
       "flexslider": "https://github.com/woocommerce/FlexSlider/archive/2.6.4.zip",
       "chosen": "https://github.com/harvesthq/chosen/releases/download/v1.8.2/chosen_v1.8.2.zip",
       "datetimepicker": "https://github.com/xdan/datetimepicker/archive/2.5.20.zip"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "drupal/console-extend-plugin": true,
+      "cweagans/composer-patches": true,
+      "zodiacmedia/drupal-libraries-installer": true
     }
   }
 }
