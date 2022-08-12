@@ -5,5 +5,4 @@ dependencies: {  }
 name: Thématiques
 vid: event_type
 description: 'pour les événement, les articles et les argumentaires'
-hierarchy: 0
 weight: 0

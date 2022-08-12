@@ -5,5 +5,4 @@ dependencies: {  }
 name: Entrée
 vid: entree
 description: ''
-hierarchy: 0
 weight: 0

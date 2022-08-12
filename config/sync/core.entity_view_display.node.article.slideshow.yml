@@ -5,8 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.slideshow
     - field.field.node.article.body
+    - field.field.node.article.field_home_slideshow
     - field.field.node.article.field_image
     - field.field.node.article.field_release_date
+    - field.field.node.article.field_thematique
     - node.type.article
   module:
     - ds

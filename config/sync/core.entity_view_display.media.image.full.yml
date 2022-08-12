@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.media.full
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_tag_media
     - image.style.large_landscape
     - media.type.image
   module:

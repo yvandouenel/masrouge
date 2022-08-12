@@ -5,11 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.event.body
+    - field.field.node.event.field_acces
     - field.field.node.event.field_dates
     - field.field.node.event.field_document
+    - field.field.node.event.field_entree
+    - field.field.node.event.field_event_condition
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
     - field.field.node.event.field_inscription
+    - field.field.node.event.field_tel
     - node.type.event
   module:
     - datetime_range
@@ -116,6 +120,9 @@ content:
     third_party_settings: {  }
 hidden:
   content_moderation_control: true
+  field_acces: true
+  field_entree: true
   field_event_condition: true
+  field_tel: true
   langcode: true
   links: true

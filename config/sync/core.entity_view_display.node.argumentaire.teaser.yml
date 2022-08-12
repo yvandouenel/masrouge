@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.argumentaire.body
     - field.field.node.argumentaire.field_image
+    - field.field.node.argumentaire.field_release_date
     - field.field.node.argumentaire.field_thematique
     - node.type.argumentaire
   module:

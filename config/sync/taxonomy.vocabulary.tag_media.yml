@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Etiquettes Médias'
 vid: tag_media
 description: ''
-hierarchy: 0
 weight: 0

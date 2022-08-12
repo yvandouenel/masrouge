@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
     - field.field.node.event.field_inscription
+    - field.field.node.event.field_tel
     - node.type.event
   module:
     - datetime_range
@@ -144,6 +145,14 @@ content:
     third_party_settings: {  }
     type: webform_entity_reference_entity_view
     region: footer
+  field_tel:
+    weight: 17
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
 hidden:
   content_moderation_control: true
   langcode: true

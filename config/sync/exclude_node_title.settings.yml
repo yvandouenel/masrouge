@@ -20,3 +20,4 @@ content_type_modes:
   page: {  }
   webform: {  }
   webform_demo_event: {  }
+type: remove

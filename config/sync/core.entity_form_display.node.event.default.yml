@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
     - field.field.node.event.field_inscription
+    - field.field.node.event.field_tel
     - node.type.event
   module:
     - single_datetime
@@ -29,6 +30,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   field_acces:
@@ -42,12 +44,14 @@ content:
     settings:
       hour_format: 24h
       allow_times: '15'
+      allowed_hours: ''
       exclude_date: ''
       datetimepicker_theme: default
       min_date: ''
       max_date: ''
       year_start: ''
       year_end: ''
+      allow_blank: '1'
       disable_days:
         1: 0
         2: 0
@@ -57,8 +61,7 @@ content:
         6: 0
         7: 0
       inline: 0
-      allowed_hours: ''
-      mask: false
+      mask: 0
     third_party_settings: {  }
     type: single_date_time_range_widget
     region: content
@@ -87,6 +90,14 @@ content:
       default_data: true
     third_party_settings: {  }
     type: webform_entity_reference_select
+    region: content
+  field_tel:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   title:
     type: string_textfield

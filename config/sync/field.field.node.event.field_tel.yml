@@ -1,0 +1,19 @@
+uuid: a56650a8-1b4b-428d-a41a-0be93c4e636b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tel
+    - node.type.event
+id: node.event.field_tel
+field_name: field_tel
+entity_type: node
+bundle: event
+label: Tel
+description: 'Le n° de tél de la personne occupant la salle'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,5 +1,0 @@
-name: Coopernet entity references
-description: Put the right default entity reference for event and article content type
-type: module
-core: 8.x
-configure: coopernetentityref.form
