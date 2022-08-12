@@ -94,6 +94,7 @@ body.path-agenda {
     }
   }
   h2.page-header {
+    display: none;
     color: @gray-darker-ensemble;
     .title-regular();
     font-size: 1em;
@@ -124,8 +125,13 @@ body.path-agenda {
       width: 0%;
       text-align: right;
       a {
+        position: relative;
+        padding-left: 40px;
         &:after {
           .glyphicon();
+          position: absolute;
+          top: -3px;
+          left: 0;
           content: "\e833";
           padding: 5px 20px 3px 4px;
           border-radius: 25px;
@@ -144,8 +150,14 @@ body.path-agenda {
     #next-month {
       width: 0%;
       a {
+        position: relative;
+        padding-right: 40px;
         &:before {
           .glyphicon();
+          position: absolute;
+          top: -3px;
+          right: 0;
+          left: auto;
           content: "\e834";
           padding: 5px 15px 3px 8px;
           border-radius: 25px;
@@ -218,6 +230,7 @@ body.path-agenda {
         padding: 5px;
         color: @green-ensemble;
         margin-right: 20px;
+        margin-top: 10px !important;
         &:before {
           .glyphicon();
           color: @green-ensemble;
@@ -238,11 +251,11 @@ body.path-agenda {
             padding: 10px;
             color: @gray-darker-ensemble;
             .txt-bold();
-            &:before {
+            /*&:before {
               .glyphicon();
               color: @gray-ensemble;
               content:"\e83C";
-            }
+            }*/
             &:hover {
               color: @red-ensemble;
               background-color: @gray-light-ensemble;
@@ -251,7 +264,7 @@ body.path-agenda {
               }
             }
             .schedule-event{
-              padding-left: 30px;
+              padding-left: 2px;
             }
           }
         }

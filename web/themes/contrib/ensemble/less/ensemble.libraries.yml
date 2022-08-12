@@ -1,7 +1,7 @@
 framework:
   css:
     theme:
-      css/style.min.css: {}
+      css/style.css: {}
   js:
     bootstrap/js/affix.js: {}
     bootstrap/js/alert.js: {}
