@@ -8136,7 +8136,7 @@ figure figcaption {
 }
 @media (max-width: 768px) {
   #sticky-headband #icon-search-sm {
-    display: table;
+    display: none;
     margin: 10px 10px 20px 85%;
     width: 30px;
     height: 30px;
@@ -8217,6 +8217,7 @@ figure figcaption {
 @media (max-width: 768px) {
   #sticky-headband > div.container .navbar-ensemble {
     border: 1px solid green;
+    display: none;
     /* Menu ******************************/
   }
   #sticky-headband > div.container .navbar-ensemble .navbar-toggle {
@@ -10545,6 +10546,11 @@ body.path-agenda h2.page-header {
 body.path-agenda #links-months {
   margin: 0 auto;
   display: table;
+}
+@media (max-width: 992px) {
+  body.path-agenda #links-months {
+    width: 96vw;
+  }
 }
 body.path-agenda #links-months #previous-month,
 body.path-agenda #links-months #current-month,
