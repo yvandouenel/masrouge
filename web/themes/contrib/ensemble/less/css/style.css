@@ -10493,6 +10493,13 @@ body.path-agenda {
   /* Fin de la zone de gestion des mois ****************/
   /* Résultats mois par mois ***************************/
 }
+@media (max-width: 992px) {
+  body.path-agenda #add-event-masrouge {
+    position: relative;
+    top: -22px;
+    left: 10px;
+  }
+}
 body.path-agenda #add-event-masrouge a {
   display: block;
   font-family: 'Nunito', sans-serif;
