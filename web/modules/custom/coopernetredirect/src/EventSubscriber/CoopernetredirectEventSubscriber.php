@@ -17,15 +17,15 @@ class CoopernetredirectEventSubscriber implements EventSubscriberInterface {
   public function checkForCustomRedirect(GetResponseEvent $event) {
     $request = $event->getRequest();
 
-    /* if($request->attributes->get('_route') == "view.events.list_event" ) {
+    if($request->attributes->get('_route') == "view.events.list_event" ) {
       // test if path finishes with a number
       $current_path = \Drupal::service('path.current')->getPath();
       $r = preg_match_all("/.*?(\d+)$/", $current_path, $matches);
       if($r == 0) {
         $event->setResponse(new RedirectResponse(Url::fromRoute('view.events.list_event')->toString() . "/" . date("Y") . date("m")), $status = 301, $headers);
       }
-    } */
-    if($request->attributes->get('_route') == "view.events.list_event" ) {
+    }
+    /* if($request->attributes->get('_route') == "view.events.list_event" ) {
       // Get current path without query parameters
       $current_path = \Drupal::service('path.current')->getPath();
       
@@ -47,7 +47,7 @@ class CoopernetredirectEventSubscriber implements EventSubscriberInterface {
         
         $event->setResponse(new RedirectResponse($redirect_url, $status = 301, $headers));
       }
-    }
+    } */
     if($request->attributes->get('_route') == "entity.user.canonical" ) {
       // to do : test if user has the right role
       $current_user = \Drupal::currentUser();
